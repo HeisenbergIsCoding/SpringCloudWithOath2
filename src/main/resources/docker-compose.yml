@@ -12,6 +12,8 @@ services:
 
   redis:
     image: redis:6.2  # 指定 Redis 的版本為 6.2
+    environment:
+      REDIS_PASSWORD: 123456
     ports:
       - "6379:6379"
     volumes:
