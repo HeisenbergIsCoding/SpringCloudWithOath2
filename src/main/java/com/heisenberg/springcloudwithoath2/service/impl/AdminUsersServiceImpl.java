@@ -1,5 +1,6 @@
-package com.heisenberg.springcloudwithoath2.service;
+package com.heisenberg.springcloudwithoath2.service.impl;
 
+import com.heisenberg.springcloudwithoath2.service.AdminUsersService;
 import org.springframework.stereotype.Service;
 
 /**
