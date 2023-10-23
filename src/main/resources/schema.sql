@@ -8,6 +8,7 @@ create table user_info
     is_login     tinyint(1) comment '是否登入,0-未登入,1-登入',
     is_del       tinyint(1) comment '是否刪除,0-未刪除,1-刪除',
     create_time  timestamp default current_timestamp comment '建立時間',
+    create_by varchar(60) comment '建立人',
     primary key (id)
 );
 alter table user_info comment '使用者資訊';
@@ -22,6 +23,7 @@ create table user_sms_code
     sms_code     varchar(60) comment '簡訊驗證碼',
     send_time    timestamp default current_timestamp comment '簡訊發送時間',
     create_time  timestamp default current_timestamp comment '建立時間',
+    create_by varchar(60) comment '建立人',
     primary key (id)
 );
 alter table user_sms_code comment '使用者簡訊驗證碼';
